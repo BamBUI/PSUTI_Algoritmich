@@ -1,0 +1,1097 @@
+html{
+	font-size: 16px;
+}
+
+
+body{
+	margin: 0;
+	font-family: "Myriad Pro Regular";
+	color:white;
+	line-height: 1.6;
+}
+
+*{
+	margin:0;
+	padding: 0;
+
+	box-sizing: border-box;
+}
+
+/* Header */
+
+header{
+
+width: 100%;
+
+position: fixed;
+top: 0;
+left: 0;
+z-index: 3;
+background-color:#323232; 
+
+}
+
+
+.container{
+	width: 100%;
+	max-width: 1230px;
+	padding:0 15px;
+	margin: 0 auto;
+}
+
+.header_inner{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	margin-top: 2.5rem;
+
+}
+
+.header_list{
+	display: flex;
+}
+
+.header_navigation li{
+	list-style: none;
+	display: flex;
+
+}
+
+
+.navigation{
+	
+	text-decoration: none;
+	color:white;
+
+	font-size: 1.25rem;
+	font-weight: 700;
+
+	margin-right: 1.9rem;
+
+	position: relative;
+
+
+}
+
+.navigation:after{
+
+	content: "";
+	width: 100%;
+	height: 3px;
+
+	background-color: #11749e;
+	opacity: 0;
+
+	position: absolute;
+	top:117%;
+	left: 0;
+	z-index: 2;
+
+
+	transition: opacity .5s linear;
+
+
+}
+
+.active:after{
+	opacity:1;
+}
+
+
+.navigation:hover:after{
+	opacity: 1;
+}
+
+
+
+.header_logo{
+	font-size: 1.9rem;
+    font-weight: 700;
+
+    position: relative;
+    z-index: 3;
+}
+
+.header_logo a{
+	text-decoration: none;
+	color:white;	
+}
+
+
+
+/*Intro */
+
+.intro{
+
+	width: 100%;
+	height: 100vh;
+	
+	background: url(images/header/header_background_01.jpg) center no-repeat;
+	background-size: cover;
+
+	position: relative;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+
+.intro_column{
+
+	text-align: center;
+
+}
+
+.intro_title{
+	font-size: 9.5rem;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+
+.intro_subtitle{
+
+	font-size: 1.56rem;
+	font-weight: 700;
+	text-transform: uppercase;
+
+	color: #11749e;
+
+}
+
+/* Scroll Header */
+
+.header_scroll{
+    position: absolute;
+    bottom: 0;
+    left: 48%;
+    z-index: 2;
+
+    margin-bottom: 3.125rem;
+}
+
+.header_scroll_title{
+	font-size: 0.8rem;
+}
+
+.header_scroll img{
+	margin-top:1.5rem;
+
+	max-width: 100%;
+}
+
+
+/* Aweson */
+
+.aweson{
+
+	background-color: #11749e;
+
+	padding-top: 10.6rem;
+	padding-bottom: 8rem;
+
+}
+
+
+.aweson_titile{
+	position: relative;
+
+	font-size: 2.4rem;
+
+	text-align: center;
+}
+
+.aweson_visible_logo{
+
+	opacity: .2;
+	font-size: 15.5rem;
+
+	position: absolute;
+	top:100%;
+	left:43%;
+	z-index: 1;
+
+}
+
+.aweson_content{
+	display: flex;
+	justify-content: space-between;
+
+	margin-top: 9.2rem;
+}
+
+.feature{
+	width:27%;
+
+	text-align: center;
+}
+
+
+.feature_titile{
+	text-transform: uppercase;
+
+
+	font-size: 1.125rem;
+
+	padding-top: 1.56rem;
+
+}
+
+.feature_text{
+
+	font-size: 0.94rem;
+
+
+	padding-top: 2.2rem;
+}
+
+
+/* Pictures */
+
+.pictures{
+	display: flex;
+	justify-content: space-between;
+}
+
+
+
+.black{
+	background-color: black;
+}
+
+.white{
+	color: black;
+}
+
+
+.pictures_image{
+	width: 100%;
+	max-width: 802px;
+	height: auto;
+}
+
+.item_info{
+
+	display: block;
+	padding: 9.7rem 2.8rem 6.4rem 9.5rem;
+}
+
+.item_data{
+
+	font-size: 0.8rem;
+}
+
+.info_logo{
+	font-size: 1.56rem;
+	text-transform: uppercase;
+	padding-top:1.25rem;
+}
+
+.info_text{
+	font-size: 0.94rem;
+	padding-top:2.8rem;
+}
+
+.info_subtext{
+	font-size: 0.94rem;
+	padding-top: 2.18rem;
+}
+
+.pictures_image{
+	max-width:100%;
+	display: block;
+}
+
+
+
+
+/* Blog */ 
+
+.blog{
+
+	padding: 10.6rem 0 8rem 0;
+	color:black;
+	position: relative;
+
+}
+
+.blog_intro{
+	position: relative;
+}
+
+.blog_titile{
+	font-size: 2.375rem;
+	text-transform: uppercase;
+	font-weight: 700;
+
+	text-align: center;
+}
+
+.blog_titile_visible{
+	opacity: 0.1;
+
+	font-size: 15.4rem;
+
+	position: absolute;
+	top:0;
+	left: 45%;
+	z-index: 2;
+}
+
+.vlog_subtitle{
+	font-size:1.875rem;
+
+	margin-top:7.5rem;
+	text-align: center;
+}
+
+
+.blog_content{
+	display: flex;
+
+	margin-top: 5.1875rem;
+}
+
+.blog_item{
+	width: 25%;
+
+	padding-left: 1.875rem;
+}
+
+.blog_item_title{
+	
+	font-size: 1.125rem;
+	color:#11749e;
+	text-transform: uppercase;
+
+	padding-top: 2.5rem;
+}
+
+.blog_item_text{
+
+	font-size: 0.94rem;
+
+	padding-top: 1.875rem;
+}
+
+
+/*Section_blue */
+
+.section_blue{
+	
+
+	padding: 7.5rem 0 8rem 0;
+
+	background-color: #11749e;
+	color: white;
+}
+
+.section_blue_content{
+	display: flex;
+	justify-content: space-between;
+}
+
+.blue_inner_text{
+	font-size: 0.94rem;
+}
+
+.blue_inner{
+	position: relative;
+
+	width: 46%;
+	padding-left: 6rem;
+}
+
+.blue_image{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+/* Texnologies */
+
+
+.texnogies{
+	color:white;
+
+	background: url("images/Texnologies/Texnologies_back_02.jpg") center no-repeat;
+	background-size: cover;
+
+	padding-bottom: 6.25rem;
+
+}
+
+.texnologies_cotent{
+	display: flex;
+	justify-content: space-between;
+}
+
+.texlogies_inner{
+
+	margin-top:6.25rem;
+	width: 33%;
+}
+
+.texnologies_titile{
+	font-size: 1.56rem;
+	font-weight: 700;
+	text-transform: uppercase;
+
+	padding-bottom: 2.8rem;
+
+	margin-top: 8rem;
+}
+
+.texnologies_text{
+
+	font-size: 0.94rem;
+
+	padding-bottom: 4.5rem;
+}
+
+.texlogies_li{
+
+	font-size: 0.95rem;
+	text-transform: uppercase;
+	font-weight: 700;
+	
+
+	display: block;
+	height: 3.125rem;
+	background-color: #11749e;
+
+	padding: 0.75rem 0.3rem;
+
+	margin-bottom: 1.56rem;
+}
+
+.responsive{
+
+	width:82%;
+
+}
+
+.Quality{
+	
+	width: 90%;
+
+}
+
+
+.Different{
+
+	width: 100%;
+
+}
+
+/* Team */
+
+.team{
+
+	display: flex;
+
+	margin-top: 4.7rem;
+
+}
+
+.team_inner{
+	width: 26%;
+
+	position: relative;
+}
+
+.team_image{
+	
+	width: 100%;
+	max-width: 270px;
+	height: auto;
+
+}
+
+.team_info{
+
+	position: absolute;
+	top: 85%;
+	left: 10%;
+	z-index: 1;
+
+	display: block;
+	background-color: white;
+
+	padding: 1.7rem 2.9rem;
+}
+
+
+.author{
+	font-size: 1.25rem;
+	text-transform: uppercase;
+	color:  #11749e;
+
+}
+
+.sub_author{
+	font-size: 0.94rem;
+	text-align: center;
+
+}
+
+
+/* Project */
+
+.project{
+
+	
+	color:white;
+
+	background: url("images/Texnologies/Texnologies_back_02.jpg") center no-repeat;
+	background-size: cover;
+
+	padding-bottom: 6.25rem;
+
+
+}
+
+
+.project_logo{
+
+	position: relative;
+	padding-bottom: 8.7rem;
+	padding-top: 14.4rem;
+
+}
+
+
+.logo_visible{
+
+	position: absolute;
+	top:12%;
+	left: 44%;
+	z-index: 1;
+
+
+	font-size: 15.5rem;
+	opacity: .5
+
+}
+
+.logo_text{
+	font-size: 2.3rem;
+
+	text-align: center;
+}
+
+
+.project_content{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.project_inner{
+
+	width: 28.5%;
+	padding-left: 1.9rem;
+}
+
+.message{
+	width: 100%;
+
+	margin-top: 2.1rem;
+}
+
+.message_h{
+
+	
+	width: 100%;
+	height: 9.125rem;
+
+	background-color: inherit;
+
+	border: 1px solid gray;
+
+	border-top: 1px solid white;
+
+	padding: 1rem;
+	padding-bottom: 8rem;
+
+	color: white;
+
+}
+
+
+.project_input{
+
+	width: 100%;
+	height: 3rem;
+
+	background-color: inherit;
+
+	border: 1px solid gray;
+
+	border-top: 1px solid white;
+
+	padding: 1rem;
+
+	color: white;
+
+}
+
+
+.project_button{
+	margin-top: 3rem;
+	text-align: center;
+}
+
+.button_style{
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	background-color:#11749e;
+	color: white;
+
+
+	border: none;
+
+
+	padding: 1rem 4rem 1.5rem 4rem;
+}
+
+
+/* Maps */
+
+.maps{
+	background-color: black;
+}
+
+/* Footer */ 
+
+footer{
+	background-color: black;
+}
+
+.footer_content{
+	display: flex;
+	justify-content: space-between;
+}
+
+.info_text{
+	font-size: 0.94rem;
+}
+
+
+
+/*Burger */
+
+.burger{
+	display: none;
+}
+
+@media (max-width: 1833px) {
+
+
+.pictures{
+	flex-wrap: wrap;
+}
+
+.pictures_column{
+	width: 100%;
+}
+	
+
+}
+
+
+@media (max-width: 1160px) {
+
+	.blog_content{
+		flex-wrap: wrap;
+	}
+
+	.blog_item{
+		width: 50%;
+		margin-bottom: 2rem;
+	}
+
+
+	.team{
+		flex-wrap: wrap;
+		text-align: center;
+	}
+
+	.team_inner{
+		width: 50%;
+		margin-bottom: 5rem;
+	}
+
+}
+
+
+@media (max-width: 1000px){
+
+
+	.aweson_content{
+		flex-wrap: wrap;
+	}
+
+	.feature{
+		width: 50%;
+		padding-left: 3rem;
+		padding-bottom: 5rem;
+	}
+
+
+	.iphone{
+		display: none;
+		margin:0 auto;
+	}
+
+	.texlogies_inner{
+		width: 100%;
+	}
+
+	.aweson_visible_logo{
+		left: 38%;
+	}
+	
+
+}
+
+
+
+
+@media(max-width: 895px){
+
+
+	.intro_title{
+	font-size: 8.5rem;
+}
+
+}
+
+@media(max-width: 825px){
+
+body.lock{
+		overflow: hidden;
+	}
+
+.header_scroll{
+
+	left: 45%;
+	z-index: 0;
+
+}
+
+.burger{
+	display: block;
+	position:relative;
+	width: 30px;
+	height: 20px;
+	z-index: 3;
+}
+
+.burger span{
+
+	content:"";
+	background-color: #fff;
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	left:0;
+	top:9px;
+	z-index: 2;
+	transition: all .4s ease 0s;
+}
+
+.burger:before,
+.burger:after{
+	content:"";
+	background-color: #fff;
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	left:0;
+	z-index: 2;
+	transition: all .6s ease 0s;
+
+}
+
+.burger.active_burger:before{
+	transform: rotate(45deg);
+	top:9px;
+}
+
+.burger.active_burger:after{
+	transform: rotate(-45deg);
+	bottom: 9px;
+}
+
+.active_burger span{
+	transform: scale(0);
+}
+
+.burger:before{
+	top:0;
+}
+
+.burger:after{
+	bottom:0;
+}
+
+.header_navigation{
+
+
+	position: fixed;
+	top:-120%;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #475150;
+
+	margin-top: 6rem;
+	overflow: auto;
+
+	transition: all 0.3s ease 0s;
+
+}
+
+.navigation{
+	font-size: 2.25rem;
+	margin-top: 2rem;
+	margin:2rem auto;
+}
+
+.header_list li:hover{
+	background-color: #404040;
+}
+
+.header_navigation.active_burger{
+	top:-1%;
+}
+
+.header_list{
+		display: block;
+}
+
+
+.navigation:after{
+	content: none;
+}
+
+}
+
+@media(max-width: 800px){
+
+
+
+	.intro_title{
+	font-size: 7.5rem;
+}
+
+
+}
+
+
+
+
+@media (max-width: 720px){
+
+	
+	.section_blue_content{
+		flex-wrap: wrap;
+	}
+
+	.blue_inner{
+		width: 100%;
+
+		padding-bottom: 5rem;
+	}
+
+	.blog_titile_visible{
+		left: 38%;
+	}
+
+	.project_inner{
+		width: 100%;
+		padding-bottom: 2rem;
+	}
+	
+
+}
+
+@media (max-width: 704px){
+
+	
+	.team_inner{
+		width: 100%;
+		margin-bottom: 5rem;
+	}
+	
+
+		.intro_title{
+		font-size: 6.5rem;
+	}
+
+
+}
+
+
+@media (max-width: 700px){
+
+	html{
+		font-size: 14px;
+	}
+
+	.aweson_content{
+		flex-wrap: wrap;
+	}
+
+	.feature{
+		width: 100%;
+		padding-bottom: 5rem;
+		padding-left: 0;
+	}
+
+	.aweson_visible_logo{
+		left:36%;
+	}
+
+	.section_blue{
+		padding-bottom: 0px;
+	}
+
+
+	.logo_visible{
+	left:40%;
+	}
+
+	.intro_title{
+		font-size: 6.5rem;
+	}
+
+	.header_scroll{
+		left:44%;
+	}
+
+	
+
+}
+
+
+
+@media (max-width: 620px) {
+
+
+	.blog_content{
+		flex-wrap: wrap;
+	}
+
+	.blog_item{
+		width: 100%;
+		margin-bottom: 2rem;
+	}
+
+	.item_info{
+		padding:4.7rem 2.8rem 3.4rem 2.5rem;
+	}
+
+
+}
+
+
+@media (max-width: 540px) {
+
+
+	.intro_title{
+		font-size:5.5rem;
+	}
+
+	.aweson_visible_logo{
+		left:32%;
+	}
+
+	.blog_titile_visible{
+		left:39%;
+	}
+
+
+}
+
+
+@media (max-width: 460px) {
+
+html{
+	font-size: 14px;
+}
+
+
+.aweson_visible_logo{
+	left:12%;
+}
+
+
+
+.intro_title{
+	font-size: 4.5rem;
+}
+
+}
+
+
+
+
+@media (max-width: 400px) {
+
+.blog_titile_visible{
+	left: 31%;
+}
+
+.logo_visible{
+	left:30%;
+}
+
+}
+
+
+@media(max-width:380px ){
+
+
+html{
+	font-size: 12px;
+}
+
+.team_info{
+	left:27%;
+}
+
+
+}
+
+
+
+@media(max-width:330px ){
+
+
+html{
+	font-size: 12px;
+}
+
+.intro_title{
+	font-size: 3.5rem;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
